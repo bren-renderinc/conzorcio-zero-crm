@@ -2,9 +2,9 @@ import axios from 'axios';
 
 export default async function handler(req, res) {
 
-  // Permite peticiones desde tu dominio
-  res.setHeader('Access-Control-Allow-Origin', 'https://consorciozero.com/');
-  res.setHeader('Access-Control-Allow-Methods', 'POST');
+  // Sin diagonal al final
+  res.setHeader('Access-Control-Allow-Origin', 'https://consorciozero.com');
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
   if (req.method === 'OPTIONS') {
